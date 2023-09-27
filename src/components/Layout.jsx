@@ -1,8 +1,12 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
+import { Outlet,Routes,Route } from 'react-router-dom';
 import Header from './header/Header';
 import Footer from './footer/Footer';
 
+import Home from '../pages/Home';
+import About from '../pages/About';
+import Vans from '../pages/vans/Vans';
+import VanDetails from '../pages/vans/VanDetails';
 /**
  * 
  <Outlet> Component: 
@@ -14,9 +18,16 @@ const Layout = () => {
     <div>
       <Header />
 
-      <Outlet />
+      <Routes>
+        
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/vans' element={<Vans />} />
+          <Route path='/vans/:id' element={<VanDetails />} />
+      
+      </Routes>
 
-      <Footer/>
+      <Footer />
     </div>
   );
 };
