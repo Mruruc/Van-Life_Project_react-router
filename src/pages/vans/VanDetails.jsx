@@ -4,7 +4,8 @@ import { useParams } from 'react-router-dom';
 import data from '../../data';
 
 /**
- * useParams() is a React Router hook used to   retrieve and work with URL parameters, providing access to the values defined in the URL route.
+ * useParams() is a React Router hook used to 
+ * retrieve and work with URL parameters, providing access to the values defined in the URL route.
  */
 
 const VanDetails = () => {

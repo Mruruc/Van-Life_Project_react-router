@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import data from '../../data.js';
 import Van from './Van.jsx';
 import { Link } from 'react-router-dom';
+
 const Vans = () => {
   const [vans, setVans] = useState(data);
 

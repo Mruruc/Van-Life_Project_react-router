@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Van = ({ name, price, description, imageUrl, type }) => {
+const Van = ({ name, price,imageUrl, type }) => {
   return (
     <div className='van'>
       <img src={imageUrl} alt={name} className='van-img' />

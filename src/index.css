@@ -1,9 +1,10 @@
+
 body {
   background-color: rgb(145, 140, 140);
   text-align: center;
 }
 
-nav {
+.nav {
   background-color: rgb(234, 224, 224);
   position: fixed;
   height: 5rem;
@@ -23,7 +24,11 @@ a {
   text-decoration: none;
   color: rgb(28, 40, 40);
 }
-
+.active-link{
+  font-weight: bold;
+  text-decoration: underline;
+  color:red;
+}
 .home {
   margin-top: 7rem;
 }
@@ -106,4 +111,62 @@ p{
   background-color: rgb(173, 93, 23);
   border-radius: 5px;
   border: none;
+}
+
+.dashboard{
+  margin-top: 7rem;
+}
+
+.income{
+ margin-top: 8rem;
+}
+
+.reviews{
+  margin-top: 8rem;
+}
+
+.host-nav{
+  display: flex;
+  flex-direction: row;
+  margin-top: 81px;
+  border-radius: 5px;
+  width: 30rem;
+  justify-content: space-between;
+  margin-left: 3px;
+  background-color: rgb(184, 200, 200);
+}
+.host-nav a{
+  background-color: bisque;
+}
+
+.user-vans{
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 5rem;
+  background-color: bisque;
+  border-radius: 4rem;
+  }
+
+.user-vans img{
+  width: 400px;
+  height: 400px;
+  border-radius: 3rem;
+}
+
+.back-to-link{
+  text-decoration: underline;
+}
+
+.van-detail-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-radius: 3px;
+}
+
+.van-detail-header div{
+  flex: 1;
+  background-color: rgb(160, 123, 67);
+  padding: 2px;
+  text-decoration: underline;
 }

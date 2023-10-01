@@ -8,6 +8,7 @@ const data = [
     imageUrl:
       'https://assets.scrimba.com/advanced-react/react-router/modest-explorer.png',
     type: 'simple',
+    userId: 1,
   },
   {
     id: '2',
@@ -29,6 +30,7 @@ const data = [
     imageUrl:
       'https://assets.scrimba.com/advanced-react/react-router/reliable-red.png',
     type: 'luxury',
+    userId: 1,
   },
 
   {
