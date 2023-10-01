@@ -10,6 +10,8 @@ const UserVansDetail = () => {
 
   const van = vans.filter((v) => v.id === param.id);
 
+  
+
   return (
     <div>
       <h2 className='back-to-link'>
@@ -33,7 +35,9 @@ const UserVansDetail = () => {
       })}
       
       <UserVanHeader/>
-      <Outlet />
+
+      <Outlet context={[van]}/>
+
     </div>
   );
 };
