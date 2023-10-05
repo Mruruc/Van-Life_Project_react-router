@@ -2,7 +2,8 @@ import React from 'react'
 import { useOutletContext } from 'react-router-dom';
 
 const Photo = () => {
-  const [van] =useOutletContext();
+  
+  const [van] =useOutletContext(); //=> allow us share the state or other values to child routes.
   return (
     <div>
       
