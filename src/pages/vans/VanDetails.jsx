@@ -11,7 +11,7 @@ import data from '../../data';
 const VanDetails = () => {
   const [vans, setVans] = useState(data);
   const location = useLocation();
-  console.log(location);
+  //console.log(location);
 
   const params = useParams();
   //  console.log( params);

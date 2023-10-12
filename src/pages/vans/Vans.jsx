@@ -1,11 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import data from '../../data.js';
 import Van from './Van.jsx';
-import { Link, useSearchParams } from 'react-router-dom';
+import { Link, useLoaderData, useSearchParams } from 'react-router-dom';
 import SearchParams from './SearchParams.jsx';
+/*
+export function loader(){
+  return data;
+}
+*/
 
 const Vans = () => {
   const [vans, setVans] = useState(data);
+
+  //const vans=useLoaderData();
 
   const [searchParam, setSearchParam] = useSearchParams();
   //console.log(searchParam);
@@ -27,7 +34,7 @@ const Vans = () => {
 
       <div className='van-list'>
         
-        {filteredVans.map((van) => {
+        { filteredVans.map((van) => {
           return (
             <>
               <Link to={van.id} key={van.id} state={{searchType:typeFilter}}>

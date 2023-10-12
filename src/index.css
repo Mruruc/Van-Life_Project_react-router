@@ -185,11 +185,9 @@ p {
   background-color: rgb(217, 203, 185);
 
   margin-top: -1rem;
- 
 }
 
-
-.back-link{
+.back-link {
   margin-left: -33rem;
   background-color: rgb(168, 162, 127);
   padding: 5px;
@@ -199,4 +197,18 @@ p {
 
   color: black;
   font-size: 20px;
+}
+
+.not-found {
+  margin-top: 7rem;
+}
+
+.not-found-link {
+  background-color: rgb(21, 130, 72);
+
+  width: 17rem;
+  margin-left: 13rem;
+
+  border-radius: 5px;
+  padding: 5px;
 }
